@@ -1,0 +1,100 @@
+Design Document
+Steph Therianos
+Image Editor
+
+Data
+Images - 2D array of int
+Saved images - array of ints
+Colors(Red, Green, Blue) - int
+Name of image - string
+File choice - char
+Saved names of image - array of strings
+
+Behavior
+The user uploads an image, then they may edit (crop, dim, resize) the picture. Images are made up of RGB – the system of colors for digital display in computers. Because RGB is integer numbers that represent how much red, green, and blue are in a color, the user can manipulate the brightness, dimness, or color of their chosen image by altering the int. Finally, the user has the choice to save the edited image as a new image into a file.
+
+Functions
+loadJPG()
+Input Parameters: char *filename
+Returned Output: image
+Functionality: loads an image
+
+saveJPG()
+Input Parameters: img, char filename[]
+Returned Output: void
+Functionality: saves an image
+
+getWidth()
+Input Parameters: img
+Returned Output: integer
+Functionality: receives width of picture
+
+getHeight()
+Input Parameters: img
+Returned Output: integer
+Functionality: receives height of picture
+
+getPixel()
+Input Parameters: img, int x, int y
+Returned Output: 
+Functionality: To create the 2D array
+
+getPixelRed()
+Input Parameters: int pixel
+Returned Output: integer
+Functionality: gets red
+
+getPixelGreen()
+Input Parameters: int pixel
+Returned Output: integer
+Functionality: gets green
+
+getPixelBlue()
+Input Parameters: int pixel
+Returned Output: integer
+Functionality: gets blue
+
+getImageArray()
+Input Parameters: img, int pixels[]
+Returned Output: integer
+Functionality: For array
+
+getImage2DArray()
+Input Parameters: img, int width, int height, int pixels[]
+Returned Output: integer
+Functionality: For 2D array
+
+setPixelRed()
+Input Parameters: int pixel, int red
+Returned Output: integer
+Functionality: Places red
+
+setPixelGreen()
+Input Parameters: int pixel, int green
+Returned Output: integer
+Functionality: Places green
+
+setPixelBlue()
+Input Parameters: int pixel, int blue
+Returned Output: integer
+Functionality: Places blue
+
+setPixelRGB()
+Input Parameters: int red, int green, int blue
+Returned Output: integer
+Functionality: Places red, green, and blue
+
+newImage()
+Input Parameters: int width, int height
+Returned Output: image
+Functionality: To get a new image.
+
+setImageArray()
+Input Parameters: img, int pixels[]
+Returned Output: void
+Functionality: To play image array.
+
+setImage2DArray()
+Input Parameters: img, int width, int height, int pixels[]
+Returned Output: void
+Functionality: To place 2D array of image.
